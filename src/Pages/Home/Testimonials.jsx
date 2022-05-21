@@ -12,18 +12,21 @@ const Testimonials = () => {
       name: "Winson Herry",
       img: people1,
       review: "Good",
+      location: "California",
     },
     {
       _id: 2,
       name: "Winson Herry",
       img: people2,
       review: "Good",
+      location: "California",
     },
     {
       _id: 3,
       name: "Winson Herry",
       img: people3,
       review: "Good",
+      location: "California",
     },
   ];
   return (
