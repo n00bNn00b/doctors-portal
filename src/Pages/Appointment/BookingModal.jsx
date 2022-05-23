@@ -6,7 +6,7 @@ import Loading from "../Shared/Loading";
 
 const BookingModal = ({ treatment, setTreatment, date }) => {
   const { name, slots, _id } = treatment;
-  const [user, loading, error] = useAuthState(auth);
+  const [user, loading] = useAuthState(auth);
 
   if (loading) {
     return <Loading />;
