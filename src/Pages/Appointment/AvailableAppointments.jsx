@@ -9,12 +9,14 @@ const AvailableAppointments = ({ date }) => {
   const [treatment, setTreatment] = useState(null);
 
   useEffect(() => {
-    axios.get("services.json").then((res) => setServices(res.data));
+    axios
+      .get("http://localhost:5000/services")
+      .then((res) => setServices(res.data));
   }, []);
 
   return (
     <div>
-      <h4 className="text-xl text-secondary text-center">
+      <h4 className="text-xl text-secondary text-center my-12">
         Available Appointments on {format(date, "PP")}
       </h4>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
